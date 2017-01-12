@@ -1,0 +1,20 @@
+group 'me.dakbutfly'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    // https://mvnrepository.com/artifact/com.itextpdf/itextpdf
+    compile group: 'com.itextpdf', name: 'itextpdf', version: '5.5.10'
+    // https://mvnrepository.com/artifact/com.itextpdf.tool/xmlworker
+    compile group: 'com.itextpdf.tool', name: 'xmlworker', version: '5.5.10'
+
+
+}
