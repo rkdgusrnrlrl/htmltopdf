@@ -38,7 +38,7 @@ public class Main {
 
             //HTML
             XMLWorkerFontProvider fontProvider = new XMLWorkerFontProvider(XMLWorkerFontProvider.DONTLOOKFORFONTS);
-            fontProvider.register("./font/NanumBarunGothic.ttf", "Open Sans");
+            fontProvider.register("./font/NanumBarunGothic.ttf", "NanumBarunGothic");
             CssAppliersImpl cssAppliers = new CssAppliersImpl(fontProvider);
 
             HtmlPipelineContext context = new HtmlPipelineContext(cssAppliers);
@@ -56,7 +56,7 @@ public class Main {
 
             File file = new File("src/main/resources/READMEforTypora.html");
             System.out.println(file.getAbsolutePath());
-            FileInputStream fileReader = new FileInputStream("src/main/resources/READMEforTypora.html");
+            FileInputStream fileReader = new FileInputStream("src/main/resources/README.html");
             xmlParser.parse(fileReader);
 
             System.out.println(document.toString());
